@@ -98,6 +98,7 @@
 			</div>
 		</div>
 	</div>
+	<?php echo $this->fetch('content'); ?>
 	<div class="footer">
 		<div class="wrap">	
 			<div class="section group">
