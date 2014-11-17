@@ -230,9 +230,7 @@ App::uses('Debugger', 'Utility');
 					)); ?>		
 					 <h2>Lorem Ipsum is simply </h2>					 
 					 <div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">$899.99</span></p>
-					    </div>
+				       
 					       		<div class="add-cart">								
 									<h4><a href="preview.html">Download</a></h4>
 							     </div>
