@@ -118,10 +118,8 @@ class Postgres extends DboSource {
 
 		try {
 			$this->_connection = new PDO(
-				"pgsql:host={$config['host']};port={$config['port']};dbname={$config['database']}",
-				$config['login'],
-				$config['password'],
-				$flags
+				"pgsql:dbname={$config['database']} host={$config['host']} port={$config['port']} user=wvdqfjvagyvsrz
+				 password=LJfrGF0sBMPiSJpMgKSZgAKeua sslmode=require"
 			);
 
 			$this->connected = true;

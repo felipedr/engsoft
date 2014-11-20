@@ -35,6 +35,7 @@
 		echo $this->Html->script('jquery.accordion');
 		echo $this->Html->script('jquery.easing');
 		echo $this->Html->script('slides.min.jquery');
+		
 	?>
 
 </head>
@@ -49,9 +50,9 @@
 					</div>
 					<div class="account_desc">
 						<ul>
-							<li><a href="#">Register</a></li>
+							<li><a href="#">Registre-se</a></li>
 							<li><a href="#">Login</a></li>
-							<li><a href="#">My Account</a></li>
+							<li><a href="#">Minha conta</a></li>
 						</ul>
 					</div>
 					<div class="clear"></div>
@@ -72,7 +73,7 @@
 			<div class="header_bottom">
 				<div class="menu">
 					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
+						<li class="active"><a href="index.html">Principal</a></li>
 						<li><a href="about.html">Sobre</a></li>
 						<li><a href="contact.html">Contato</a></li>
 						<div class="clear"></div>
@@ -103,16 +104,6 @@
 					</ul>
 				</div>
 				<div class="col_1_of_4 span_1_of_4">
-					<h4>Why buy from us</h4>
-					<ul>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="contact.html">Customer Service</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="contact.html">Site Map</a></li>
-						<li><a href="#">Search Terms</a></li>
-					</ul>
-				</div>
-				<div class="col_1_of_4 span_1_of_4">
 					<h4>Minha conta</h4>
 					<ul>
 						<li><a href="contact.html">Sign In</a></li>
@@ -125,20 +116,22 @@
 				<div class="col_1_of_4 span_1_of_4">
 					<h4>Contato</h4>
 					<ul>
-						<li><span>+91-123-456789</span></li>
-						<li><span>+00-123-000000</span></li>
+						<li><span>(11) 91234-5678</span></li>
+						<li><span>contato@ebookfacil.com</span></li>
 					</ul>
-					<div class="social-icons">
-						<h4>Siga-nos</h4>
-						<ul>
-							<li><a href="#" target="_blank"><?php echo $this->Html->image('facebook.png');?> </a></li>
-							<li><a href="#" target="_blank"><?php echo $this->Html->image('twitter.png');?> </a></li>
-							<li><a href="#" target="_blank"><?php echo $this->Html->image('skype.png');?> </a></li>
-							<li><a href="#" target="_blank"> <?php echo $this->Html->image('dribbble.png');?></a></li>
-							<li><a href="#" target="_blank"> <?php echo $this->Html->image('linkedin.png');?></a></li>
-							<div class="clear"></div>
-						</ul>
-					</div>
+				</div>
+				<div class="col_1_of_4 span_1_of_4 social-icons">
+					
+					<h4>Siga-nos</h4>
+					<ul>
+						<li><a href="#" target="_blank"><?php echo $this->Html->image('facebook.png');?> </a></li>
+						<li><a href="#" target="_blank"><?php echo $this->Html->image('twitter.png');?> </a></li>
+						<li><a href="#" target="_blank"><?php echo $this->Html->image('skype.png');?> </a></li>
+						<li><a href="#" target="_blank"> <?php echo $this->Html->image('dribbble.png');?></a></li>
+						<li><a href="#" target="_blank"> <?php echo $this->Html->image('linkedin.png');?></a></li>
+						<div class="clear"></div>
+					</ul>
+				
 				</div>
 			</div>			
 		</div>

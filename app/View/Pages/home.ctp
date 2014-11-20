@@ -16,18 +16,13 @@ App::uses('Debugger', 'Utility');
 		<div class="categories">
 			<ul>
 				<h3>Categorias</h3>
-				<li><a href="#">Mobile Phones</a></li>
-				<li><a href="#">Desktop</a></li>
-				<li><a href="#">Laptop</a></li>
-				<li><a href="#">Accessories</a></li>
-				<li><a href="#">Software</a></li>
-				<li><a href="#">Sports &amp; Fitness</a></li>
-				<li><a href="#">Footwear</a></li>
-				<li><a href="#">Jewellery</a></li>
-				<li><a href="#">Clothing</a></li>
-				<li><a href="#">Home Decor &amp; Kitchen</a></li>
-				<li><a href="#">Beauty &amp; Healthcare</a></li>
-				<li><a href="#">Toys, Kids &amp; Babies</a></li>
+				<!-- <?php //foreach ($generos as $genero): ?>
+				    <li>
+				        <?php echo $this->Html->link($genero['generos']['nome'],'#'); ?>
+				        
+				    </li> 
+				<?php //endforeach; ?> -->
+				
 			</ul>
 		</div>					
 	</div>
@@ -89,10 +84,10 @@ App::uses('Debugger', 'Utility');
     <div class="content wrap">
     	<div class="content_top">
     		<div class="heading">
-    		<h3>New Products</h3>
+    		<h3>Novos livros</h3>
     		</div>
     		<div class="see">
-    			<p><a href="#">See all Products</a></p>
+    			<p><a href="#">Todos os livros</a></p>
     		</div>
     		<div class="clear"></div>
     	</div>
@@ -167,10 +162,10 @@ App::uses('Debugger', 'Utility');
 			</div>
 			<div class="content_bottom">
     		<div class="heading">
-    		<h3>Feature Products</h3>
+    		<h3>Mais baixados</h3>
     		</div>
     		<div class="see">
-    			<p><a href="#">See all Products</a></p>
+    			<p><a href="#">Todos os livros</a></p>
     		</div>
     		<div class="clear"></div>
     	</div>
