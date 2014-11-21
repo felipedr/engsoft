@@ -60,7 +60,7 @@
 				<div class="header_top">
 					<div class="logo">
 						<?php
-							echo $this->Html->image("logo.png", array(
+							echo $this->Html->image("logo.jpg", array(
 							'url' => array('controller' => 'index.php')
 							));
 						?>
@@ -73,9 +73,22 @@
 			<div class="header_bottom">
 				<div class="menu">
 					<ul>
-						<li class="active"><a href="index.html">Principal</a></li>
-						<li><a href="about.html">Sobre</a></li>
-						<li><a href="contact.html">Contato</a></li>
+						<li class="active"><?php
+							echo $this->Html->link(
+							    'Principal',
+							   	array('controller' => 'index.php')
+							);
+						?></li>
+						<li><?php
+							echo $this->Html->link(
+							    'Sobre nós',
+							    array(
+							        'controller' => 'about',
+							        'action' => 'view'
+							    )
+							);
+						?></li>
+						
 						<div class="clear"></div>
 					</ul>
 				</div>
@@ -96,21 +109,27 @@
 				<div class="col_1_of_4 span_1_of_4">
 					<h4>Informações</h4>
 					<ul>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="contact.html">Customer Service</a></li>
-						<li><a href="#">Advanced Search</a></li>
-						<li><a href="delivery.html">Orders and Returns</a></li>
-						<li><a href="contact.html">Contact Us</a></li>
+						<li>
+						<?php
+							echo $this->Html->link(
+							    'Sobre nós',
+							    array(
+							        'controller' => 'about',
+							        'action' => 'view'
+							    )
+							);
+						?>
+						</li>
+				
+						<li><a href="contact.html">FAQ</a></li>
+						
 					</ul>
 				</div>
 				<div class="col_1_of_4 span_1_of_4">
 					<h4>Minha conta</h4>
 					<ul>
-						<li><a href="contact.html">Sign In</a></li>
-						<li><a href="index.html">View Cart</a></li>
-						<li><a href="#">My Wishlist</a></li>
-						<li><a href="#">Track My Order</a></li>
-						<li><a href="contact.html">Help</a></li>
+						<li><a href="contact.html">Login</a></li>
+						<li><a href="index.html">Minha conta</a></li>
 					</ul>
 				</div>
 				<div class="col_1_of_4 span_1_of_4">

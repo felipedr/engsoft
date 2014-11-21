@@ -16,12 +16,12 @@ App::uses('Debugger', 'Utility');
 		<div class="categories">
 			<ul>
 				<h3>Categorias</h3>
-				<!-- <?php //foreach ($generos as $genero): ?>
+				 <?php foreach ($generos as $genero): ?>
 				    <li>
 				        <?php echo $this->Html->link($genero['generos']['nome'],'#'); ?>
 				        
 				    </li> 
-				<?php //endforeach; ?> -->
+				<?php endforeach; ?> 
 				
 			</ul>
 		</div>					

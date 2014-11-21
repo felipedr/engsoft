@@ -46,9 +46,9 @@ class PagesController extends AppController {
  */
 	public function display() {
 		$path = func_get_args();
-	//	$this->loadModel('generos');
-	//	$generos = $this->generos->find('all');
-	//	$this->set('generos', $generos);
+		$this->loadModel('generos');
+		$generos = $this->generos->find('all');
+		$this->set('generos', $generos);
 		
 		$count = count($path);
 		if (!$count) {
