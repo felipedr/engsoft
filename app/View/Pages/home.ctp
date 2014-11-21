@@ -15,7 +15,7 @@ App::uses('Debugger', 'Utility');
 	<div class="header_bottom_left">				
 		<div class="categories">
 			<ul>
-				<h3>Categorias</h3>
+				<h3>Gêneros</h3>
 				 <?php foreach ($generos as $genero): ?>
 				    <li>
 				        <?php echo $this->Html->link($genero['generos']['nome'],'#'); ?>
@@ -221,7 +221,7 @@ App::uses('Debugger', 'Utility');
 				<div class="grid_1_of_4 images_1_of_4">
 				 <?php echo $this->Html->image("new-pic4.jpg", array(
 					    "alt" => "",
-					    'url' => array('controller' => 'produtos','action' => 'view',1)
+					    'url' => array('controller' => 'livros','action' => 'view',1)
 					)); ?>		
 					 <h2>Lorem Ipsum is simply </h2>					 
 					 <div class="price-details">
