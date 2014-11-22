@@ -121,7 +121,17 @@
 						?>
 						</li>
 				
-						<li><a href="contact.html">FAQ</a></li>
+						<li>
+						<?php
+							echo $this->Html->link(
+							    'FAQ',
+							    array(
+							        'controller' => 'about',
+							        'action' => 'faq'
+							    )
+							);
+						?>
+						</li>
 						
 					</ul>
 				</div>

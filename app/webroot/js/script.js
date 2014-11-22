@@ -1,3 +1,11 @@
+$(document).ready(function() {
+		$("#posts").accordion({ 
+			header: "div.tab", 
+			alwaysOpen: false,
+			autoheight: false
+		});
+	});
+
 $(window).load(function(){
 	
 	// We are listening to the window.load event, so we can be sure
