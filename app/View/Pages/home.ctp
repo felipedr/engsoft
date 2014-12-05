@@ -98,7 +98,7 @@ App::uses('Debugger', 'Utility');
 				    <div class="grid_1_of_4 images_1_of_4">
 				        <?php echo $this->Html->image($ultimo['livros']['foto_capa'], array(
 					    "alt" => "",
-					    'url' => array('controller' => 'produtos','action' => 'view',$ultimo['livros']['id'])
+					    'url' => array('controller' => 'livros','action' => 'view',$ultimo['livros']['id'])
 					)); ?>
 				        <h2><?php echo $ultimo['livros']['nome']?> </h2>	
 				        <div class="price-details">
@@ -108,7 +108,7 @@ App::uses('Debugger', 'Utility');
 									<?php 
 									echo $this->Html->link(
 										    'Download',
-										    '/produtos/view/'.$ultimo['livros']['id']
+										    '/livros/view/'.$ultimo['livros']['id']
 										);
 									?>
 									</h4>
@@ -134,7 +134,7 @@ App::uses('Debugger', 'Utility');
 				    <div class="grid_1_of_4 images_1_of_4">
 				        <?php echo $this->Html->image($livro['livros']['foto_capa'], array(
 					    "alt" => "",
-					    'url' => array('controller' => 'produtos','action' => 'view',$livro['livros']['id'])
+					    'url' => array('controller' => 'livros','action' => 'view',$livro['livros']['id'])
 					)); ?>
 				        <h2><?php echo $livro['livros']['nome']?> </h2>	
 				        <div class="price-details">
@@ -144,7 +144,7 @@ App::uses('Debugger', 'Utility');
 									<?php 
 									echo $this->Html->link(
 										    'Download',
-										    '/produtos/view/'.$livro['livros']['id']
+										    '/livros/view/'.$livro['livros']['id']
 										);
 									?>
 									</h4>
