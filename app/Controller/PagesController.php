@@ -49,7 +49,14 @@ class PagesController extends AppController {
 		$this->loadModel('generos');
 		$generos = $this->generos->find('all');
 		$this->set('generos', $generos);
-		
+
+		$this->loadModel('livros');
+		$ultimos = $this->livros->find('all',array('order' => array('id' => 'desc'),'limit' => 4));
+		$this->set('ultimos', $ultimos);
+
+		$mais_baixados = $this->livros->find('all',array('order' => array('downloads' => 'desc'),'limit' => 4));
+		$this->set('mais_baixados', $mais_baixados);		
+
 		$count = count($path);
 		if (!$count) {
 			return $this->redirect('/');

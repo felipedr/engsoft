@@ -32,43 +32,43 @@ App::uses('Debugger', 'Utility');
 				<div id="mover">
 					<div id="slide-1" class="slide">			                    
 						<div class="slider-img">
-							<?php echo $this->Html->image('slide-1-image.png', array('alt' => 'learn more')); ?>									    
+							<?php echo $this->Html->image('terror.jpg'); ?>									    
 						</div>
 						<div class="slider-text">
-							<h1>Clearance<br><span>SALE</span></h1>
-							<h2>UPTo 20% OFF</h2>
+							<h1>Livros de</h1><br><h2><b><span>TERROR</span></b></h2>
+							<h2>Muahahaawawa!</h2>
 							<div class="features_list">
-								<h4>Get to Know More About Our Memorable Services Lorem Ipsum is simply dummy text</h4>							               
+								<h4>Confira as aterorizantes novidades na<br> nossa sessão de terror</h4>							               
 							</div>
-							<a href="preview.html" class="button">Shop Now</a>
+							<a href="#" class="button">Visualizar</a>
 						</div>			               
 						<div class="clear"></div>				
 					</div>	
 					<div class="slide">
 						<div class="slider-text">
-							<h1>Clearance<br><span>SALE</span></h1>
-							<h2>UPTo 40% OFF</h2>
+							<h1>Você gosta de<br><span>LER?</span></h1>
+							<h2>Tomara que sim!</h2>
 							<div class="features_list">
-								<h4>Get to Know More About Our Memorable Services</h4>							               
+								<h4>Veja em nosso blog os beneficios da<br> leitura em nossas vidas.</h4>							               
 							</div>
-							<a href="preview.html" class="button">Shop Now</a>
+							<a href="#" class="button">Visualizar</a>
 						</div>		
 						<div class="slider-img">
-							<?php echo $this->Html->image('slide-3-image.jpg', array('alt' => 'learn more')); ?>
+							<?php echo $this->Html->image('livros_capa_2.jpg'); ?>
 						</div>						             					                 
 						<div class="clear"></div>				
 					</div>
 					<div class="slide">						             	
 						<div class="slider-img">
-							<?php echo $this->Html->image('slide-2-image.jpg', array('alt' => 'learn more')); ?>
+							<?php echo $this->Html->image('livros_capa_3.jpg'); ?>
 						</div>
 						<div class="slider-text">
-							<h1>Clearance<br><span>SALE</span></h1>
-							<h2>UPTo 10% OFF</h2>
+							<h1>Você conhece<br><span>POE?</span></h1>
+							<h2>Como não?</h2>
 							<div class="features_list">
-								<h4>Get to Know More About Our Memorable Services Lorem Ipsum is simply dummy text</h4>							               
+								<h4>Conheça mais sobre esse grande autor da literatura mundial.</h4>							               
 							</div>
-							<a href="preview.html" class="button">Shop Now</a>
+							<a href="#" class="button">Visualizar</a>
 						</div>	
 						<div class="clear"></div>				
 					</div>												
@@ -92,73 +92,33 @@ App::uses('Debugger', 'Utility');
     		<div class="clear"></div>
     	</div>
 	      <div class="section group">
-				<div class="grid_1_of_4 images_1_of_4">
-					<?php echo $this->Html->image("feature-pic1.jpg", array(
+
+		
+				 <?php foreach ($ultimos as $ultimo): ?>
+				    <div class="grid_1_of_4 images_1_of_4">
+				        <?php echo $this->Html->image($ultimo['livros']['foto_capa'], array(
 					    "alt" => "",
-					    'url' => array('controller' => 'produtos','action' => 'view',1)
+					    'url' => array('controller' => 'produtos','action' => 'view',$ultimo['livros']['id'])
 					)); ?>
-					
-					 <h2>Lorem Ipsum is simply </h2>
-					<div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">$620.87</span></p>
-					    </div>
+				        <h2><?php echo $ultimo['livros']['nome']?> </h2>	
+				        <div class="price-details">
+				       
 					       		<div class="add-cart">								
-									<h4><a href="preview.html">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-					 
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-					<?php echo $this->Html->image("feature-pic2.jpg", array(
-					    "alt" => "",
-					    'url' => array('controller' => 'produtos','action' => 'view',2)
-					)); ?>
-					 <h2>Lorem Ipsum is simply </h2>
-					<div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">$899.75</span></p>
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="preview.html">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-				    
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-				<?php echo $this->Html->image("feature-pic3.jpg", array(
-					    "alt" => "",
-					    'url' => array('controller' => 'produtos','action' => 'view',3)
-					)); ?>
-					 <h2>Lorem Ipsum is simply </h2>
-					 <div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">$599.00</span></p>
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="preview.html">Add to Cart</a></h4>
+									<h4>
+									<?php 
+									echo $this->Html->link(
+										    'Download',
+										    '/produtos/view/'.$ultimo['livros']['id']
+										);
+									?>
+									</h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
 				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-					<?php echo $this->Html->image("feature-pic4.jpg", array(
-					    "alt" => "",
-					    'url' => array('controller' => 'produtos','action' => 'view',4)
-					)); ?>
-					 <h2>Lorem Ipsum is simply </h2>
-					<div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">$679.87</span></p>
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="preview.html">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>				     
-				</div>
+				   
+				<?php endforeach; ?> 
+				
 			</div>
 			<div class="content_bottom">
     		<div class="heading">
@@ -170,68 +130,30 @@ App::uses('Debugger', 'Utility');
     		<div class="clear"></div>
     	</div>
 			<div class="section group">
-				<div class="grid_1_of_4 images_1_of_4">
-					 <?php echo $this->Html->image("new-pic1.jpg", array(
+				 <?php foreach ($mais_baixados as $livro): ?>
+				    <div class="grid_1_of_4 images_1_of_4">
+				        <?php echo $this->Html->image($livro['livros']['foto_capa'], array(
 					    "alt" => "",
-					    'url' => array('controller' => 'produtos','action' => 'view',1)
-					)); ?>				
-					 <h2>Lorem Ipsum is simply </h2>
-					<div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">$849.99</span></p>
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="preview.html">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-					 <?php echo $this->Html->image("new-pic2.jpg", array(
-					    "alt" => "",
-					    'url' => array('controller' => 'produtos','action' => 'view',1)
-					)); ?>		
-					 <h2>Lorem Ipsum is simply </h2>
-					 <div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">$599.99</span></p>
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="preview.html">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-					 <?php echo $this->Html->image("new-pic3.jpg", array(
-					    "alt" => "",
-					    'url' => array('controller' => 'produtos','action' => 'view',1)
-					)); ?>		
-					 <h2>Lorem Ipsum is simply </h2>
-					<div class="price-details">
-				       <div class="price-number">
-							<p><span class="rupees">$799.99</span></p>
-					    </div>
-					       		<div class="add-cart">								
-									<h4><a href="preview.html">Add to Cart</a></h4>
-							     </div>
-							 <div class="clear"></div>
-					</div>
-				</div>
-				<div class="grid_1_of_4 images_1_of_4">
-				 <?php echo $this->Html->image("new-pic4.jpg", array(
-					    "alt" => "",
-					    'url' => array('controller' => 'livros','action' => 'view',1)
-					)); ?>		
-					 <h2>Lorem Ipsum is simply </h2>					 
-					 <div class="price-details">
+					    'url' => array('controller' => 'produtos','action' => 'view',$livro['livros']['id'])
+					)); ?>
+				        <h2><?php echo $livro['livros']['nome']?> </h2>	
+				        <div class="price-details">
 				       
 					       		<div class="add-cart">								
-									<h4><a href="preview.html">Download</a></h4>
+									<h4>
+									<?php 
+									echo $this->Html->link(
+										    'Download',
+										    '/produtos/view/'.$livro['livros']['id']
+										);
+									?>
+									</h4>
 							     </div>
 							 <div class="clear"></div>
 					</div>
 				</div>
+				   
+				<?php endforeach; ?> 
 			</div>
     </div>
  </div>
