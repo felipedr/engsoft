@@ -4,14 +4,20 @@
 				<div class="col_1_of_3 span_1_of_3">
 					<h3>Quem somo nós?</h3>
 						<?php echo $this->Html->image('about_img.jpg');?>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<p>Somos a ebook fácil, um site que visa trazer aos apaixonados por livros um conteúdo de fácil acesso,
+					rápido e gratuito. Com o crescimento de plataformas para leitura de ebooks, como kindles e tablets, notamos
+					que faltam no mercado sites que possam trazer esse tipo de conteúdo gratuitamente e com qualidade para os leitores.
+					Acreditamos que todos devem ter acesso a educação e informação gratuitamente e com qualidade, e é isso que buscamos
+					trazer aos nossos visitantes.</p>
 				</div>
 				<div class="col_1_of_3 span_1_of_3">
 					<h3>Nossa história</h3>
 				 <div class="history-desc">
 					<div class="year"><p>2014 -</p></div>
-					<p class="history">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p class="history">Felipe Duarte e Beatriz Sonzzini, dois alunos do curso de Ciência da Computação do IME-USP,
+					realizam a criação deste website como projeto final da disciplina MAC0332 - Engenharia de Software, ministrada pelo
+					Professor Marco Aurélio Gerosa.
+					</p>
 				 <div class="clear"></div>
 				</div>
 				 
